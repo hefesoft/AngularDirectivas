@@ -1,0 +1,24 @@
+﻿<section class="mainbar" data-ng-controller="Ejercicio2 as vm">
+    <section class="matter">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="widget wviolet">
+                    <div data-cc-widget-header title="{{vm.title}}"></div>
+                    <div class="widget-content user">
+                        <h3>Ejercicio 2 sobre directivas manejo de un array y paso de la propiedad del controller al control y de hay al template</h3>
+
+                        <div data-ng-repeat="item in vm.dataEjemplo">                            
+                            <ejemplo2 p="item" codigo="vm.codigo(item)" />
+                        </div>
+
+                    </div>
+                    
+                    
+                    <div class="widget-foot">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
